@@ -1,3 +1,8 @@
+# POC for technical interview
+This is a proof-of-concept I created to solve a solution for a technical interview. Unfortunately, I did not quite finish the solution and it is broken as-is.
+
+Leaving it, though, for my own reference.
+
 # Choose CIDR blocks for subnets
 
     for i in 0 1 2 3 ; do END=$(( 64 * i )); sipcalc 10.99.0.$END/26 | grep -E 'Host addr|Addresses|Network range'; echo "===";  done
